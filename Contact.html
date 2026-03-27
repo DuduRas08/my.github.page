@@ -3,15 +3,56 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
+        <style>
+            body{font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid gray;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            input[type=submit] {
+                background-color: green;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover {
+                background-color: lightgreen;
+            }
+            .container {
+                border-radius: 5px;
+                background-color: white;
+                padding: 20px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1>Contact Me</h1>
+            <h1>Book My Beats</h1>
             <nav>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
+                <a href="BookMyBeats.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
             </nav>
+            <div class="container">
+                <form action="action_page.php" method="action">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </header>
     </body>

@@ -15,13 +15,30 @@ header{
 header h1{
     margin: 0;
 }
+a{
+    background-color: cadetblue;
+    color: whitesmoke;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    overflow: hidden;
+}
 nav a{
     color: white;
+    text-align: center;
+    float: left;
     text-decoration: none;
+    padding: 14px 16px;
     margin: 0 10px;
+    font-size: 17px;
+    max-width: fit-content;
 }
 nav a:hover {
-    text-decoration: underline;
+    background-color: white;
+    color: black;
 }
 main{
     padding: 20px;

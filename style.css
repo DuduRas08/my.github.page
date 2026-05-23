@@ -1,110 +1,44 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  font-family: Times New Roman, serif;
+  margin: 0;
 }
-header{
-    background-color: rgb(44, 76, 135);
-    color: white;
-    padding: 0;
-    text-align: left;
-}
-header h1{
-    margin: 0;
-}
-a{
-    background-color:black ;
-    color: whitesmoke;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
-}
-nav{
-    overflow: hidden;
-}
-nav a{
-    color: white;
-    text-align: center;
-    float: left;
-    text-decoration: none;
-    padding: 14px 16px;
-    margin: 0 10px;
-    font-size: 17px;
-    max-width: fit-content;
-}
-nav a:hover {
-    background-color: white;
-    color: black;
-}
-main{
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-footer{
-    background-color: black;
-    color: white;
-    text-align: left;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-* {
-  box-sizing: border-box;
-}
-
-div.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-div.gallery-item {
-  margin: 5px;
-  border: 1px solid #ccc;
-  width: calc(25% - 20px);
-}
-div.gallery-item:hover {
-  border: 1px solid #777;
-}
-div.gallery-item img {
-  width: 100%;
-  height: auto;
-}
-div.gallery-item div.desc {
-  padding: 15px;
-  text-align: center;
-}
-@media only screen and (max-width: 768px) {
-  div.gallery-item {
-    width: calc(50% - 20px);
-  }
-}
-@media only screen and (max-width: 480px) {
-  div.gallery-item {
-    width: calc(100% - 20px);
-  }
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: rgb(17, 0, 255);
+.header{  
   color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+  padding: 80px;
+  text-align: center;
+  background: red;
 }
-#myBtn:hover {
-  background-color: #555;
+.header h1{
+  font-size: 50px;
+}
+.navbar{
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right{
+  float: right;
+}
+.navbar a:hover{
+  background-color: #ddd;
+  color: black;
+}
+.footer{
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+@media screen and (max-width: 600px){
+  .navbar a{
+    float: none;
+    width: 100%;
+  }
 }

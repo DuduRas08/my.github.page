@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookMyBeats</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="header">
-        <h1>BookMyBeats</h1>
-    </div>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Services.html">Services</a>
-        <a href="Contact.html">Contact</a>
-        <a href="back.html" class="right">Book Now</a>
-    </div>
-    <div class="footer">
-        <p>&copy; 2026 BookMyBeats. All rights reserved.</p>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookMyBeats</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .container{
+                position:relative;
+            }
+            .topleft {
+                position: absolute;
+                top: 30px;
+                left: 10px;
+                font-size: 24px;
+                color: black;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                opacity: 0.45;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>BookMyBeats</h1>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Booking.html" class="right">Book Now</a>
+        </div>
+        <div class="container">
+            <img src="https://img.magnific.com/premium-photo/dj-mixing-outdoors-beach-party-festival_1047188-1054.jpg" alt="DJ Image" width="100" height="50">
+            <div class="topleft">
+                <h2>Welcome to BookMyBeats!</h2>
+                <p>Your one-stop destination for booking the best DJs for your events.<br>Whether you're planning a wedding, corporate event, or a private party,<br>we've got you covered with our extensive network of talented performers.</p>
+                <p>Explore our services, check out our featured artists, and book your next unforgettable event with us today!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2026 BookMyBeats. All rights reserved.</p>
+        </div>
+    </body>
+</html>

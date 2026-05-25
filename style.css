@@ -66,8 +66,7 @@ input-row .input-group{
 }
 input{
   width:100%;
-  border: none;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
   outline: none;
   padding-bottom: 10px;
 }

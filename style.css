@@ -41,15 +41,48 @@ body{
   background: #f9f9f9;
   display: flex;
 }
-contact-left{
+.contact-left{
   flex-basis:60%;
   padding: 40px 60px;
 }
-contact-right{
+.contact-right{
   flex: basis 40%;
   padding: 40px;
   background-color: lightblue;
   color: white;
+}
+h1{
+  margin-bottom: 20px;
+}
+.container p{
+  margin-bottom: 20px;
+}
+.input-row{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+input-row .input-group{
+  flex-basis: 48%;
+}
+input{
+  width:100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 10px;
+}
+textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+label{
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
 }
 .btn{
   background-color: blue;

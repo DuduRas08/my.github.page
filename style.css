@@ -5,11 +5,13 @@ body{
 .header{  
   color: white;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   background: lightblue;
+  font-family: fantasy;
 }
 .header h1{
   font-size: 50px;
+  font-weight: light;
 }
 .navbar{
   overflow: hidden;
@@ -34,8 +36,8 @@ body{
   color: black;
 }
 .container{
-  width: 80%;
-  margin: 50px auto;
+  border-radius: 5px;
+  padding: 20px;
 }
 .contact-box{
   background: #f9f9f9;
@@ -49,33 +51,29 @@ body{
   flex: basis 40%;
   padding: 40px;
   background: lightblue;
+  color: white;
 }
 h1{
   margin-bottom: 20px;
 }
 .container p{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-.input-row{
-  display: flex;
-  margin-bottom: 20px;
-  justify-content: space-between;
-}
-input-row .input-group{
-  flex-basis: 48%;
+.input-container{
+  position: relative;
+  margin: 1rem 0
 }
 input{
   width:100%;
-  border: 1px solid #ccc;
-  outline: none;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 textarea{
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   outline: none;
-  padding-bottom: 10px;
+  padding: 10px;
   box-sizing: border-box;
+  resize: vertical;
 }
 label{
   display: block;

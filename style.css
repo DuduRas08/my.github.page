@@ -275,6 +275,7 @@ tr td{
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  float: left;
 }
 input[type="submit"]{
   background-color:blue;

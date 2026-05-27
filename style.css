@@ -265,33 +265,35 @@ tr td{
     display: flex;
   }
 }
-.b.container{
-  border-radius: 5px;
-  padding: 20px;
-  background-color: lightblue;
+.b.container .form{
+  display: flex;
+  flex-direction: column;
 }
-.input[type="text"], select, textarea{
+.b.container .label{
+  margin-bottom: 6px;
+  color: #333;
+}
+.b.container .input, .b.container .select, .b.container .textarea{
   width: 100%;
   padding: 10px 0px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  float: left;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-indent: 10px;
 }
-input[type="submit"]{
-  background-color:blue;
+.b.container .input:focus, .b.container .select:focus, .b.container .textarea:focus{
+  outline: none;
+  border-color: blue;
+}
+.b.container .button{
+  background-color: blue;
   color: white;
   padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  size: 16px;
-}
-input[type="submit"]:hover{
-  background-color: darkblue;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
 }
 .main{
   padding: 20px;
